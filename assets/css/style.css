@@ -91,7 +91,6 @@ main {
     border-radius: 10px;
 }
 
-/* Current Conditions Section */
 .current-conditions {
     background-color: #243647;
     padding: 1.5rem;
@@ -138,7 +137,6 @@ main {
     color: #1DB954;
 }
 
-/* Horizontal Information Grid */
 .detailed-info-grid {
     display: flex;
     justify-content: space-between;
@@ -168,6 +166,7 @@ main {
     font-weight: bold;
     color: #ffffff;
 }
+
 
 /* Map Section */
 .map-section {
