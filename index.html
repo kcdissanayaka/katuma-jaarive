@@ -65,19 +65,57 @@
         .lake-water-card .additional-info span {
             display: inline-block;
         }
+
+        .analytics-section {
+            margin-top: 20px;
+            background-color: #e0f7fa;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .analytics-section h2 {
+            margin-bottom: 10px;
+            color: #004466;
+        }
+
+        .analytics-section .forecast-card {
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 10px;
+        }
+
+        .analytics-section .forecast-card h3 {
+            font-size: 1.1rem;
+            color: #333;
+        }
+
+        .map-section img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        /* Interactive Graph Placeholder */
+        .graph-placeholder {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
     </style>
 </head>
 <body>
-        <!-- Navigation Bar -->
-        <nav>
-            <ul>
-                <li><a href="/katuma-jaarive/index.html">Home</a></li>
-                <li><a href="/katuma-jaarive/pages/register.html">Register</a></li>
-                <li><a href="/katuma-jaarive/pages/login.html">Login</a></li>
-                <li><a href="/katuma-jaarive/pages/admin.html">Admin Approval</a></li>
-                <li><a href="/katuma-jaarive/pages/upload.html">Upload File</a></li>
-            </ul>
-        </nav>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="/katuma-jaarive/index.html">Home</a></li>
+            <li><a href="/katuma-jaarive/pages/register.html">Register</a></li>
+            <li><a href="/katuma-jaarive/pages/login.html">Login</a></li>
+            <li><a href="/katuma-jaarive/pages/admin.html">Admin Approval</a></li>
+            <li><a href="/katuma-jaarive/pages/upload.html">Upload File</a></li>
+        </ul>
+    </nav>
     
     <!-- Main Section: Lake Water Quality Overview -->
     <main>
@@ -107,36 +145,36 @@
                 <img src="/katuma-jaarive/assets/images/map-placeholder.png" alt="Lake Water Quality Map">
                 <p>Nearby lake conditions. <a href="#">Open full map</a></p>
             </div>
-        </section>
 
-        <!-- 10-Day Water Quality Forecast Section -->
-        <section class="forecast-section">
-            <h2>Lake Water Quality Forecast</h2>
-            <div class="forecast-cards">
-                <div class="forecast-card">
-                    <h3>Today</h3>
-                    <p>Water Temperature: 20°C</p>
-                    <p>Algae Condition: Stable</p>
+            <!-- Analytics Section -->
+            <section class="analytics-section">
+                <h2>Lake Water Quality Forecast</h2>
+                <div class="forecast-cards">
+                    <div class="forecast-card">
+                        <h3>Today</h3>
+                        <p>Water Temperature: 20°C</p>
+                        <p>Algae Condition: Stable</p>
+                    </div>
+                    <div class="forecast-card">
+                        <h3>Tomorrow</h3>
+                        <p>Water Temperature: 22°C</p>
+                        <p>Algae Condition: Slight Increase</p>
+                    </div>
+                    <div class="forecast-card">
+                        <h3>Next 5 Days</h3>
+                        <p>Water Temperature: 19-23°C</p>
+                        <p>Algae Condition: Stable</p>
+                    </div>
                 </div>
-                <div class="forecast-card">
-                    <h3>Tomorrow</h3>
-                    <p>Water Temperature: 22°C</p>
-                    <p>Algae Condition: Slight Increase</p>
-                </div>
-                <div class="forecast-card">
-                    <h3>Next 5 Days</h3>
-                    <p>Water Temperature: 19-23°C</p>
-                    <p>Algae Condition: Stable</p>
-                </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- Graph Section -->
-        <section class="graph-section">
-            <h2>Hourly Water Quality Changes</h2>
-            <div class="graph-placeholder">
-                <p>Graph showing hourly changes in water temperature, pH, and algae conditions.</p>
-            </div>
+            <!-- Graph Section -->
+            <section class="graph-section">
+                <h2>Hourly Water Quality Changes</h2>
+                <div class="graph-placeholder">
+                    <p>Graph showing hourly changes in water temperature, pH, and algae conditions.</p>
+                </div>
+            </section>
         </section>
     </main>
 
