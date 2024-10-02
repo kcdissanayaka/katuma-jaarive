@@ -1,105 +1,84 @@
-/* Reset some default styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>KATUMA JÄÄRIVE HIGHLEVEL SOLUTION</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="assets/images/logo.png" alt="Katuma Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Current Water Quality</a></li>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Observations</a></li>
+                <li><a href="#">Alerts & Notifications</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            <div class="search-bar">
+                <input type="text" placeholder="Search by location...">
+                <button>Search</button>
+            </div>
+        </nav>
+    </header>
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f8ff;
-}
+    <main>
+        <section class="hero">
+            <div class="background-animation"></div>
+            <h1>Current Lake Water Quality</h1>
+            <div class="overview">
+                <div class="parameter">
+                    <h3>Water Temperature:</h3>
+                    <p>20°C</p>
+                </div>
+                <div class="parameter">
+                    <h3>pH Level:</h3>
+                    <p>7.5</p>
+                </div>
+                <div class="parameter">
+                    <h3>Blue-Green Algae Condition:</h3>
+                    <p>Normal</p>
+                </div>
+                <div class="expand">
+                    <button onclick="toggleDetails()">Show More</button>
+                </div>
+                <div id="more-info" class="hidden">
+                    <div class="parameter">
+                        <h3>Nitrogen Levels:</h3>
+                        <p>0.3 mg/L</p>
+                    </div>
+                    <div class="parameter">
+                        <h3>Phosphorus Levels:</h3>
+                        <p>0.02 mg/L</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-header {
-    background-color: #004466;
-    padding: 1rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+        <section class="analytics">
+            <h2>Water Quality Analytics</h2>
+            <div class="charts">
+                <!-- Analytics graphs placeholders -->
+                <div class="chart">Water Temperature (Last 5 Hours)</div>
+                <div class="chart">Forecasting (Next 5 Hours)</div>
+                <div class="chart">Acidity Level Changes</div>
+                <div class="chart">Nitrogen & Phosphorus Levels</div>
+                <div class="chart">Blue-Green Algae Growth (Weekly)</div>
+                <div class="chart">Prediction (Next Week)</div>
+            </div>
+        </section>
+    </main>
 
-.logo img {
-    height: 50px;
-}
+    <footer>
+        <p>&copy; 2024 Katuma Jäärive Solution. All Rights Reserved.</p>
+    </footer>
 
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 2rem;
-}
-
-.nav-links li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.search-bar {
-    display: flex;
-}
-
-.search-bar input {
-    padding: 0.5rem;
-    border: none;
-    border-radius: 5px;
-}
-
-.search-bar button {
-    padding: 0.5rem;
-    background-color: #005577;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    margin-left: 0.5rem;
-    border-radius: 5px;
-}
-
-.hero {
-    padding: 2rem;
-    text-align: center;
-    background-color: #e0f7fa;
-}
-
-.background-animation {
-    height: 200px;
-    background-image: url('assets/images/water-animation.gif'); /* Use an animated water GIF here */
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-bottom: 2rem;
-}
-
-.parameter {
-    margin: 1rem 0;
-}
-
-.expand {
-    margin-top: 1rem;
-}
-
-#more-info.hidden {
-    display: none;
-}
-
-.analytics {
-    padding: 2rem;
-}
-
-.charts {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
-}
-
-.chart {
-    background-color: #fff;
-    padding: 1rem;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-footer {
-    background-color: #004466;
-    color: #fff;
-    text-align: center;
-    padding: 1rem;
-}
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
