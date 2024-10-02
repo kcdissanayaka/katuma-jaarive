@@ -37,68 +37,70 @@
     <!-- Main Section: Lake Water Quality Overview -->
     <main>
         <section class="main-content">
-            <!-- Current Water Quality Section -->
-            <div class="current-conditions">
-                <h2>Current Lake Water Quality</h2>
-                <div class="main-display">
-                    <div class="main-temperature">
-                        <i class="fa-solid fa-temperature-high"></i> 20°C
+            <div class="two-columns">
+                <!-- Current Water Quality Section -->
+                <div class="current-conditions">
+                    <h2>Current Lake Water Quality</h2>
+                    <div class="main-display">
+                        <div class="main-temperature">
+                            <i class="fa-solid fa-temperature-high"></i> 20°C
+                        </div>
+                        <div class="additional-details">
+                            <p><i class="fa-solid fa-flask"></i> pH Level: 7.5</p>
+                            <p><i class="fa-solid fa-seedling"></i> Blue-Green Algae: Normal</p>
+                        </div>
                     </div>
-                    <div class="additional-details">
-                        <p><i class="fa-solid fa-flask"></i> pH Level: 7.5</p>
-                        <p><i class="fa-solid fa-seedling"></i> Blue-Green Algae: Normal</p>
+
+                    <!-- Metrics in Grid -->
+                    <div class="metrics-grid">
+                        <div class="metric-card">
+                            <div class="icon"><i class="fa-solid fa-temperature-high"></i></div>
+                            <h3>Water Temperature</h3>
+                            <p class="value">20°C</p>
+                            <p>Stable</p>
+                        </div>
+
+                        <div class="metric-card">
+                            <div class="icon"><i class="fa-solid fa-flask"></i></div>
+                            <h3>pH Level</h3>
+                            <p class="value">7.5</p>
+                            <p>Neutral</p>
+                        </div>
+
+                        <div class="metric-card">
+                            <div class="icon"><i class="fa-solid fa-wind"></i></div>
+                            <h3>Oxygen Saturation</h3>
+                            <p class="value">95%</p>
+                            <p>Normal</p>
+                        </div>
+
+                        <div class="metric-card">
+                            <div class="icon"><i class="fa-solid fa-seedling"></i></div>
+                            <h3>Blue-Green Algae</h3>
+                            <p class="value">Normal</p>
+                            <p>Safe</p>
+                        </div>
+
+                        <div class="metric-card">
+                            <div class="icon"><i class="fa-solid fa-water"></i></div>
+                            <h3>Nitrogen Level</h3>
+                            <p class="value">0.3 mg/L</p>
+                            <p>Safe</p>
+                        </div>
+
+                        <div class="metric-card">
+                            <div class="icon"><i class="fa-solid fa-leaf"></i></div>
+                            <h3>Phosphorus Level</h3>
+                            <p class="value">0.02 mg/L</p>
+                            <p>Safe</p>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Metrics and Map in Grid Layout -->
-                <div class="metrics-grid">
-                    <div class="metric-card">
-                        <div class="icon"><i class="fa-solid fa-temperature-high"></i></div>
-                        <h3>Water Temperature</h3>
-                        <p class="value">20°C</p>
-                        <p>Stable</p>
-                    </div>
-
-                    <div class="metric-card">
-                        <div class="icon"><i class="fa-solid fa-flask"></i></div>
-                        <h3>pH Level</h3>
-                        <p class="value">7.5</p>
-                        <p>Neutral</p>
-                    </div>
-
-                    <div class="metric-card">
-                        <div class="icon"><i class="fa-solid fa-wind"></i></div>
-                        <h3>Oxygen Saturation</h3>
-                        <p class="value">95%</p>
-                        <p>Normal</p>
-                    </div>
-
-                    <div class="metric-card">
-                        <div class="icon"><i class="fa-solid fa-seedling"></i></div>
-                        <h3>Blue-Green Algae</h3>
-                        <p class="value">Normal</p>
-                        <p>Safe</p>
-                    </div>
-
-                    <div class="metric-card">
-                        <div class="icon"><i class="fa-solid fa-water"></i></div>
-                        <h3>Nitrogen Level</h3>
-                        <p class="value">0.3 mg/L</p>
-                        <p>Safe</p>
-                    </div>
-
-                    <div class="metric-card">
-                        <div class="icon"><i class="fa-solid fa-leaf"></i></div>
-                        <h3>Phosphorus Level</h3>
-                        <p class="value">0.02 mg/L</p>
-                        <p>Safe</p>
-                    </div>
-
-                    <!-- Map Section inside the Grid -->
-                    <div class="map-section">
-                        <img src="/katuma-jaarive/assets/images/map-placeholder.png" alt="Lake Water Quality Map">
-                        <p>Nearby lake conditions. <a href="#">Open full map</a></p>
-                    </div>
+                <!-- Map Section -->
+                <div class="map-section">
+                    <img src="/katuma-jaarive/assets/images/map-placeholder.png" alt="Lake Water Quality Map">
+                    <p>Nearby lake conditions. <a href="#">Open full map</a></p>
                 </div>
             </div>
         </section>
