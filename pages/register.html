@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Registration</title>
 
-    <!-- Firebase SDKs -->
-    <script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-firestore.js"></script>
+    <!-- Use Firebase SDK Version 8 -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js"></script>
 
-    <!-- Firebase Configuration (Add this inside the <head> section) -->
+    <!-- Firebase Configuration -->
     <script>
         const firebaseConfig = {
             apiKey: "AIzaSyAmJIgDVXuQ0pSvoEjl1QTlR4fHQjdFnUc",
@@ -25,7 +25,6 @@
         firebase.initializeApp(firebaseConfig);
     </script>
 
-    <!-- Link to your custom stylesheet -->
     <link rel="stylesheet" href="/katuma-jaarive/assets/css/style.css">
 </head>
 <body>
@@ -51,14 +50,13 @@
         <button type="submit">Register</button>
     </form>
 
-    <!-- Firebase functions to save user data and handle registration -->
     <script>
         // Save user data to Firestore
         function saveUserData(uid, email) {
             firebase.firestore().collection("users").doc(uid).set({
                 email: email,
-                role: "user",  // Default role for regular users
-                status: "pending"  // Registration is pending admin approval
+                role: "user",
+                status: "pending"
             })
             .then(() => {
                 console.log("User data saved in Firestore.");
