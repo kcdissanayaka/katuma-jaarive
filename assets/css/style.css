@@ -108,3 +108,35 @@ footer {
     padding: 1rem;
     margin-top: 2rem;
 }
+
+/* Basic Navigation Bar Styling */
+nav {
+    background-color: #004466;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+nav ul li a:hover {
+    background-color: #005577;
+    color: white;
+    border-radius: 5px;
+}
+
