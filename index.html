@@ -6,104 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>KATUMA JÄÄRIVE HIGHLEVEL SOLUTION</title>
     <link rel="stylesheet" href="/katuma-jaarive/assets/css/style.css">
-    <style>
-        /* General Card Styles */
-        .lake-water-card {
-            background-color: #f0f8ff;
-            border-radius: 10px;
-            padding: 20px;
-            max-width: 400px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            font-family: Arial, sans-serif;
-            margin-bottom: 20px;
-        }
-
-        .lake-water-card h2 {
-            font-size: 1.5rem;
-            color: #333;
-            margin-bottom: 10px;
-        }
-
-        .lake-water-card .current-water-info {
-            display: flex;
-            align-items: center;
-            margin-bottom: 10px;
-        }
-
-        .lake-water-card .water-icon img {
-            width: 50px;
-            height: 50px;
-            margin-right: 15px;
-        }
-
-        .lake-water-card .temperature .value {
-            font-size: 2.5rem;
-            font-weight: bold;
-            color: #004466;
-        }
-
-        .lake-water-card .temperature .description {
-            display: block;
-            font-size: 0.9rem;
-            color: #666;
-        }
-
-        .lake-water-card .condition {
-            margin-top: 10px;
-            font-size: 1rem;
-            color: #444;
-        }
-
-        .lake-water-card .additional-info {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 15px;
-            font-size: 0.85rem;
-            color: #555;
-        }
-
-        .lake-water-card .additional-info span {
-            display: inline-block;
-        }
-
-        .analytics-section {
-            margin-top: 20px;
-            background-color: #e0f7fa;
-            padding: 20px;
-            border-radius: 10px;
-        }
-
-        .analytics-section h2 {
-            margin-bottom: 10px;
-            color: #004466;
-        }
-
-        .analytics-section .forecast-card {
-            background-color: #fff;
-            padding: 10px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin-bottom: 10px;
-        }
-
-        .analytics-section .forecast-card h3 {
-            font-size: 1.1rem;
-            color: #333;
-        }
-
-        .map-section img {
-            max-width: 100%;
-            border-radius: 10px;
-        }
-
-        /* Interactive Graph Placeholder */
-        .graph-placeholder {
-            background-color: #fff;
-            border-radius: 10px;
-            padding: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-    </style>
 </head>
 <body>
     <!-- Navigation Bar -->
@@ -116,27 +18,33 @@
             <li><a href="/katuma-jaarive/pages/upload.html">Upload File</a></li>
         </ul>
     </nav>
-    
+
+    <!-- Header Section -->
+    <header>
+        <div class="header-content">
+            <div class="search-bar">
+                <input type="text" placeholder="Search for lake location...">
+                <button>Search</button>
+            </div>
+            <div class="current-location">
+                <span>Current Location: Lake Hämeenlinna, Finland</span>
+                <span>Water Temperature: 20°C</span>
+            </div>
+        </div>
+    </header>
+
     <!-- Main Section: Lake Water Quality Overview -->
     <main>
         <section class="main-content">
-            <!-- Current Lake Water Quality Card -->
-            <div class="lake-water-card">
+            <!-- Current Water Quality Section -->
+            <div class="current-conditions">
                 <h2>Current Lake Water Quality</h2>
-                <div class="current-water-info">
-                    <div class="water-icon">
-                        <img src="/katuma-jaarive/assets/images/lake-water-icon.png" alt="Water Icon">
-                    </div>
-                    <div class="temperature">
-                        <span class="value">20°C</span>
-                        <span class="description">Water Temperature</span>
-                    </div>
-                </div>
-                <div class="condition">Blue-Green Algae Condition: Normal</div>
-                <div class="additional-info">
-                    <span>Oxygen Saturation: <strong>95%</strong></span>
-                    <span>Nitrogen Level: <strong>0.3 mg/L</strong></span>
-                    <span>Phosphorus Level: <strong>0.02 mg/L</strong></span>
+                <div class="condition-details">
+                    <p><strong>Water Temperature:</strong> 20°C</p>
+                    <p><strong>pH Level:</strong> 7.5</p>
+                    <p><strong>Blue-Green Algae:</strong> Normal</p>
+                    <p><strong>Nitrogen Level:</strong> 0.3 mg/L</p>
+                    <p><strong>Phosphorus Level:</strong> 0.02 mg/L</p>
                 </div>
             </div>
 
@@ -145,36 +53,36 @@
                 <img src="/katuma-jaarive/assets/images/map-placeholder.png" alt="Lake Water Quality Map">
                 <p>Nearby lake conditions. <a href="#">Open full map</a></p>
             </div>
+        </section>
 
-            <!-- Analytics Section -->
-            <section class="analytics-section">
-                <h2>Lake Water Quality Forecast</h2>
-                <div class="forecast-cards">
-                    <div class="forecast-card">
-                        <h3>Today</h3>
-                        <p>Water Temperature: 20°C</p>
-                        <p>Algae Condition: Stable</p>
-                    </div>
-                    <div class="forecast-card">
-                        <h3>Tomorrow</h3>
-                        <p>Water Temperature: 22°C</p>
-                        <p>Algae Condition: Slight Increase</p>
-                    </div>
-                    <div class="forecast-card">
-                        <h3>Next 5 Days</h3>
-                        <p>Water Temperature: 19-23°C</p>
-                        <p>Algae Condition: Stable</p>
-                    </div>
+        <!-- 10-Day Water Quality Forecast Section -->
+        <section class="forecast-section">
+            <h2>Lake Water Quality Forecast</h2>
+            <div class="forecast-cards">
+                <div class="forecast-card">
+                    <h3>Today</h3>
+                    <p>Water Temperature: 20°C</p>
+                    <p>Algae Condition: Stable</p>
                 </div>
-            </section>
+                <div class="forecast-card">
+                    <h3>Tomorrow</h3>
+                    <p>Water Temperature: 22°C</p>
+                    <p>Algae Condition: Slight Increase</p>
+                </div>
+                <div class="forecast-card">
+                    <h3>Next 5 Days</h3>
+                    <p>Water Temperature: 19-23°C</p>
+                    <p>Algae Condition: Stable</p>
+                </div>
+            </div>
+        </section>
 
-            <!-- Graph Section -->
-            <section class="graph-section">
-                <h2>Hourly Water Quality Changes</h2>
-                <div class="graph-placeholder">
-                    <p>Graph showing hourly changes in water temperature, pH, and algae conditions.</p>
-                </div>
-            </section>
+        <!-- Graph Section -->
+        <section class="graph-section">
+            <h2>Hourly Water Quality Changes</h2>
+            <div class="graph-placeholder">
+                <p>Graph showing hourly changes in water temperature, pH, and algae conditions.</p>
+            </div>
         </section>
     </main>
 
