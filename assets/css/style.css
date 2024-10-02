@@ -44,10 +44,10 @@
     color: #1DB954;
 }
 
-/* Metrics as Square Boxes */
+/* Metrics and Map Grid Layout */
 .metrics-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(3, 1fr); /* 3 columns layout */
     gap: 20px;
     margin-top: 20px;
 }
@@ -59,8 +59,7 @@
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     text-align: center;
     transition: transform 0.2s;
-    height: 150px; /* Adjust this to control square shape */
-    width: 150px;  /* Ensure width and height are the same */
+    height: 150px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -93,4 +92,33 @@
     margin-bottom: 5px;
     font-size: 2rem;
     color: #1DB954;
+}
+
+/* Map Section within the Grid */
+.map-section {
+    background-color: #243647;
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    grid-column: span 2; /* Span across 2 columns */
+}
+
+.map-section img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.map-section p {
+    margin-top: 10px;
+    color: #b0c7d4;
+}
+
+.map-section a {
+    color: #1DB954;
+    text-decoration: none;
+}
+
+.map-section a:hover {
+    color: #17A544;
 }
