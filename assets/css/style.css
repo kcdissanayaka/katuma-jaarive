@@ -18,6 +18,7 @@ nav {
     padding: 15px;
     margin-bottom: 20px;
     border-radius: 8px;
+    text-align: center;
 }
 
 nav ul {
@@ -35,10 +36,10 @@ nav ul li a {
     text-decoration: none;
     font-weight: bold;
     padding: 1rem;
+    transition: background-color 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #f0f8ff;
     background-color: #005577;
     border-radius: 5px;
 }
@@ -85,7 +86,9 @@ header {
 /* Main Content Layout */
 main {
     padding: 2rem;
-    background-color: #e0f7fa;
+    background-color: #2C3E50;
+    color: #ffffff;
+    border-radius: 10px;
 }
 
 .main-content {
@@ -113,13 +116,13 @@ main {
 }
 
 .current-conditions .condition-details {
-    font-size: 1.2rem;
+    font-size: 2rem;
     color: #ffffff;
 }
 
 .current-conditions .additional-info {
     margin-top: 15px;
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: #b0c7d4;
 }
 
@@ -165,7 +168,7 @@ main {
 
 .forecast-card {
     background-color: #2E3A47;
-    padding: 1rem;
+    padding: 1.5rem;
     border-radius: 10px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     width: 30%;
