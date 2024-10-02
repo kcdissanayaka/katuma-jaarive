@@ -13,12 +13,12 @@
     <!-- Your Firebase configuration -->
     <script>
         const firebaseConfig = {
-          apiKey: "AIzaSyAmJIgDVXuQ0pSvoEjl1QTlR4fHQjdFnUc",
-          authDomain: "katu-5bd79.firebaseapp.com",
-          projectId: "katu-5bd79",
-          storageBucket: "katu-5bd79.appspot.com",
-          messagingSenderId: "823368555973",
-          appId: "1:823368555973:web:280de276ff7011744affac"
+          apiKey: "YOUR_API_KEY",
+          authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
+          projectId: "YOUR_PROJECT_ID",
+          storageBucket: "YOUR_PROJECT_ID.appspot.com",
+          messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
+          appId: "YOUR_APP_ID"
         };
 
         // Initialize Firebase
@@ -60,6 +60,17 @@
     <link rel="stylesheet" href="/katuma-jaarive/assets/css/style.css">
 </head>
 <body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="/katuma-jaarive/index.html">Home</a></li>
+            <li><a href="/katuma-jaarive/pages/register.html">Register</a></li>
+            <li><a href="/katuma-jaarive/pages/login.html">Login</a></li>
+            <li><a href="/katuma-jaarive/pages/admin.html">Admin Approval</a></li>
+            <li><a href="/katuma-jaarive/pages/upload.html">Upload File</a></li>
+        </ul>
+    </nav>
+
     <h2>Register for Katuma Jäävi</h2>
     <form id="registerForm" onsubmit="registerUser(); return false;">
         <label for="email">Email:</label>
