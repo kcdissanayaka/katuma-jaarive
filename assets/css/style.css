@@ -81,6 +81,56 @@ main {
     border-radius: 10px;
 }
 
+/* Grid Section */
+.two-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* Metrics Grid: Ensuring Proper Spacing and Alignment */
+.metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.metric-card {
+    background-color: #243647;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.metric-card:hover {
+    transform: translateY(-5px);
+}
+
+.metric-card h3 {
+    color: #1DB954;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.metric-card p {
+    color: #b0c7d4;
+}
+
+.metric-card .value {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.metric-card .icon {
+    margin-bottom: 10px;
+    font-size: 2rem;
+    color: #1DB954;
+}
+
 /* Forecast Section */
 .forecast-section {
     margin-top: 2rem;
