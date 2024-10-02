@@ -91,32 +91,81 @@ main {
     border-radius: 10px;
 }
 
-.main-content {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 1.5rem;
-}
-
 /* Current Conditions Section */
 .current-conditions {
     background-color: #243647;
     padding: 1.5rem;
     border-radius: 10px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    transition: transform 0.2s;
-}
-
-.current-conditions:hover {
-    transform: translateY(-5px);
+    margin-bottom: 20px;
 }
 
 .current-conditions h2 {
-    color: #f0f8ff;
+    color: #1DB954;
     margin-bottom: 10px;
 }
 
-.current-conditions .condition-details {
+.main-display {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.main-temperature {
+    font-size: 3rem;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+}
+
+.main-temperature i {
+    margin-right: 10px;
+    font-size: 3rem;
+    color: #1DB954;
+}
+
+.additional-details p {
+    font-size: 1.2rem;
+    color: #b0c7d4;
+    display: flex;
+    align-items: center;
+}
+
+.additional-details i {
+    margin-right: 10px;
+    font-size: 1.5rem;
+    color: #1DB954;
+}
+
+/* Horizontal Information Grid */
+.detailed-info-grid {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.info-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #b0c7d4;
+}
+
+.info-item i {
     font-size: 2rem;
+    color: #1DB954;
+    margin-bottom: 5px;
+}
+
+.info-item p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.info-item .value {
+    font-size: 1.2rem;
+    font-weight: bold;
     color: #ffffff;
 }
 
