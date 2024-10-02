@@ -120,12 +120,6 @@ main {
     color: #ffffff;
 }
 
-.current-conditions .additional-info {
-    margin-top: 15px;
-    font-size: 1rem;
-    color: #b0c7d4;
-}
-
 /* Map Section */
 .map-section {
     background-color: #243647;
