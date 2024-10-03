@@ -75,8 +75,8 @@ nav ul li a:hover {
 /* Main Content Layout */
 main {
     padding: 2rem;
-    background-color: #2C3E50;
-    color: #ffffff;
+    background-color: #f8f9fa; /* Light background for the content area */
+    color: #333;
     border-radius: 10px;
 }
 
@@ -89,10 +89,10 @@ main {
 
 /* Left Column: Map Section */
 .left-column {
-    background-color: #243647;
+    background-color: #f0f0f0; /* Lighter card background */
     padding: 1rem;
     border-radius: 10px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
@@ -103,7 +103,7 @@ main {
 
 .left-column p {
     margin-top: 10px;
-    color: #b0c7d4;
+    color: #666;
 }
 
 .left-column a {
@@ -117,10 +117,10 @@ main {
 
 /* Middle Column: Lake Water Quality */
 .current-conditions {
-    background-color: #243647;
+    background-color: #f0f0f0; /* Light background for cards */
     padding: 1.5rem;
     border-radius: 10px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .current-conditions h2 {
@@ -137,10 +137,10 @@ main {
 }
 
 .metric-card {
-    background-color: #243647;
+    background-color: #ffffff; /* White card background */
     border-radius: 10px;
     padding: 20px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for card depth */
     text-align: center;
     transition: transform 0.2s;
 }
@@ -156,13 +156,13 @@ main {
 }
 
 .metric-card p {
-    color: #b0c7d4;
+    color: #666; /* Darker text for readability */
 }
 
 .metric-card .value {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #ffffff;
+    color: #333;
 }
 
 .metric-card .icon {
@@ -173,10 +173,10 @@ main {
 
 /* Right Column: Alerts and Observations */
 .right-column {
-    background-color: #2E3A47;
+    background-color: #f0f0f0;
     padding: 1rem;
     border-radius: 10px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     position: sticky;
     top: 20px; /* Keeps it fixed when scrolling */
 }
@@ -187,15 +187,15 @@ main {
 }
 
 .alert-card {
-    background-color: #243647;
+    background-color: #ffffff;
     margin-bottom: 1rem;
     padding: 1rem;
     border-radius: 10px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .important-alert {
-    background-color: #FF6347; /* Highlighted color for important alerts */
+    background-color: #FF6347;
     color: white;
 }
 
@@ -205,7 +205,7 @@ main {
 }
 
 .alert-card p {
-    color: #b0c7d4;
+    color: #666;
 }
 
 /* Forecast Section */
@@ -226,10 +226,10 @@ main {
 }
 
 .forecast-card {
-    background-color: #243647;
+    background-color: #ffffff;
     padding: 1.5rem;
     border-radius: 10px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
@@ -240,17 +240,17 @@ main {
 }
 
 .forecast-card p {
-    color: #b0c7d4;
+    color: #666;
     margin-bottom: 5px;
 }
 
 /* Graph Section */
 .graph-section {
     margin-top: 2rem;
-    background-color: #243647;
+    background-color: #f0f0f0;
     padding: 1rem;
     border-radius: 10px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
@@ -259,7 +259,7 @@ main {
 }
 
 .graph-placeholder {
-    color: #b0c7d4;
+    color: #666;
     font-size: 1rem;
 }
 
