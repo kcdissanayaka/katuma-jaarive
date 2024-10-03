@@ -214,28 +214,35 @@ main {
     margin-top: 2rem;
 }
 
+.forecast-section h2 {
+    color: #1DB954;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
 .forecast-cards {
-    display: flex;
-    justify-content: space-between;
-    gap: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+    gap: 20px;
 }
 
 .forecast-card {
-    background-color: #2E3A47;
+    background-color: #243647;
     padding: 1.5rem;
     border-radius: 10px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     text-align: center;
-    width: 30%;
 }
 
 .forecast-card h3 {
     color: #1DB954;
     margin-bottom: 10px;
+    font-size: 1.2rem;
 }
 
 .forecast-card p {
     color: #b0c7d4;
+    margin-bottom: 5px;
 }
 
 /* Graph Section */
