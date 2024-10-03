@@ -34,96 +34,80 @@
         </div>
     </header>
 
-    <!-- Main Section: Lake Water Quality Overview -->
+    <!-- Main Section with Three Columns: Map, Lake Water Quality, Alerts -->
     <main>
-        <section class="main-content">
-            <div class="two-columns">
-                <!-- Current Water Quality Section -->
-                <div class="current-conditions">
-                    <h2>Current Lake Water Quality</h2>
+        <section class="main-content three-columns">
+            <!-- Left Column: Map Section -->
+            <div class="left-column map-section">
+                <img src="/katuma-jaarive/assets/images/map-placeholder.png" alt="Lake Water Quality Map">
+                <p>Nearby lake conditions. <a href="#">Open full map</a></p>
+            </div>
 
-                    <!-- Metrics in Grid -->
-                    <div class="metrics-grid">
-                        <div class="metric-card">
-                            <div class="icon"><i class="fa-solid fa-temperature-high"></i></div>
-                            <h3>Water Temperature</h3>
-                            <p class="value">20°C</p>
-                            <p>Stable</p>
-                        </div>
+            <!-- Middle Column: Current Lake Water Quality Section -->
+            <div class="current-conditions">
+                <h2>Current Lake Water Quality</h2>
 
-                        <div class="metric-card">
-                            <div class="icon"><i class="fa-solid fa-flask"></i></div>
-                            <h3>pH Level</h3>
-                            <p class="value">7.5</p>
-                            <p>Neutral</p>
-                        </div>
+                <!-- Metrics in Grid -->
+                <div class="metrics-grid">
+                    <div class="metric-card">
+                        <div class="icon"><i class="fa-solid fa-temperature-high"></i></div>
+                        <h3>Water Temperature</h3>
+                        <p class="value">20°C</p>
+                        <p>Stable</p>
+                    </div>
 
-                        <div class="metric-card">
-                            <div class="icon"><i class="fa-solid fa-wind"></i></div>
-                            <h3>Oxygen Saturation</h3>
-                            <p class="value">95%</p>
-                            <p>Normal</p>
-                        </div>
+                    <div class="metric-card">
+                        <div class="icon"><i class="fa-solid fa-flask"></i></div>
+                        <h3>pH Level</h3>
+                        <p class="value">7.5</p>
+                        <p>Neutral</p>
+                    </div>
 
-                        <div class="metric-card">
-                            <div class="icon"><i class="fa-solid fa-seedling"></i></div>
-                            <h3>Blue-Green Algae</h3>
-                            <p class="value">Normal</p>
-                            <p>Safe</p>
-                        </div>
+                    <div class="metric-card">
+                        <div class="icon"><i class="fa-solid fa-wind"></i></div>
+                        <h3>Oxygen Saturation</h3>
+                        <p class="value">95%</p>
+                        <p>Normal</p>
+                    </div>
 
-                        <div class="metric-card">
-                            <div class="icon"><i class="fa-solid fa-water"></i></div>
-                            <h3>Nitrogen Level</h3>
-                            <p class="value">0.3 mg/L</p>
-                            <p>Safe</p>
-                        </div>
+                    <div class="metric-card">
+                        <div class="icon"><i class="fa-solid fa-seedling"></i></div>
+                        <h3>Blue-Green Algae</h3>
+                        <p class="value">Normal</p>
+                        <p>Safe</p>
+                    </div>
 
-                        <div class="metric-card">
-                            <div class="icon"><i class="fa-solid fa-leaf"></i></div>
-                            <h3>Phosphorus Level</h3>
-                            <p class="value">0.02 mg/L</p>
-                            <p>Safe</p>
-                        </div>
+                    <div class="metric-card">
+                        <div class="icon"><i class="fa-solid fa-water"></i></div>
+                        <h3>Nitrogen Level</h3>
+                        <p class="value">0.3 mg/L</p>
+                        <p>Safe</p>
+                    </div>
+
+                    <div class="metric-card">
+                        <div class="icon"><i class="fa-solid fa-leaf"></i></div>
+                        <h3>Phosphorus Level</h3>
+                        <p class="value">0.02 mg/L</p>
+                        <p>Safe</p>
                     </div>
                 </div>
-
-                <!-- Map Section -->
-                <div class="map-section">
-                    <img src="/katuma-jaarive/assets/images/map-placeholder.png" alt="Lake Water Quality Map">
-                    <p>Nearby lake conditions. <a href="#">Open full map</a></p>
-                </div>
             </div>
-        </section>
 
-        <!-- Lake Water Quality Forecast Section -->
-        <section class="forecast-section">
-            <h2>Lake Water Quality Forecast</h2>
-            <div class="forecast-cards">
-                <div class="forecast-card">
-                    <h3>Today</h3>
-                    <p>Water Temperature: 20°C</p>
-                    <p>Algae Condition: Stable</p>
+            <!-- Right Column: Alerts and Observations Section -->
+            <div class="right-column fixed-section">
+                <h2>Alerts & Observations</h2>
+                <div class="alert-card important-alert">
+                    <h3>Important Alert</h3>
+                    <p>Blue-Green Algae levels are rising significantly in Lake Hämeenlinna. Residents are advised to avoid swimming.</p>
                 </div>
-                <div class="forecast-card">
-                    <h3>Tomorrow</h3>
-                    <p>Water Temperature: 22°C</p>
-                    <p>Algae Condition: Slight Increase</p>
+                <div class="alert-card">
+                    <h3>Observation from User</h3>
+                    <p>User reported a drop in water temperature at Lake Katuma. Further investigation is underway by Katuma Association.</p>
                 </div>
-                <div class="forecast-card">
-                    <h3>Next 5 Days</h3>
-                    <p>Water Temperature: 19-23°C</p>
-                    <p>Algae Condition: Stable</p>
+                <div class="alert-card">
+                    <h3>Katuma Association Update</h3>
+                    <p>The association has released new guidelines for monitoring water quality.</p>
                 </div>
-            </div>
-        </section>
-
-        <!-- Graph Section: Hourly Water Quality Changes -->
-        <section class="graph-section">
-            <h2>Hourly Water Quality Changes</h2>
-            <div class="graph-placeholder">
-                <!-- Placeholder for Graph/Chart -->
-                <canvas id="hourlyWaterChart" width="400" height="200"></canvas>
             </div>
         </section>
     </main>
@@ -134,30 +118,5 @@
     </footer>
 
     <script src="/katuma-jaarive/assets/js/main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script>
-        // Dummy data for the hourly water quality changes chart
-        var ctx = document.getElementById('hourlyWaterChart').getContext('2d');
-        var hourlyWaterChart = new Chart(ctx, {
-            type: 'line',
-            data: {
-                labels: ['1 AM', '2 AM', '3 AM', '4 AM', '5 AM', '6 AM'],
-                datasets: [{
-                    label: 'Water Temperature (°C)',
-                    data: [20, 21, 21, 22, 21, 20],
-                    borderColor: 'rgba(75, 192, 192, 1)',
-                    backgroundColor: 'rgba(75, 192, 192, 0.2)',
-                    fill: true,
-                }]
-            },
-            options: {
-                scales: {
-                    y: {
-                        beginAtZero: false
-                    }
-                }
-            }
-        });
-    </script>
 </body>
 </html>
