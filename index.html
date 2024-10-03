@@ -104,10 +104,37 @@
                     <h3>Observation from User</h3>
                     <p>User reported a drop in water temperature at Lake Katuma. Further investigation is underway by Katuma Association.</p>
                 </div>
-                <div class="alert-card">
-                    <h3>Katuma Association Update</h3>
-                    <p>The association has released new guidelines for monitoring water quality.</p>
+            </div>
+        </section>
+
+        <!-- Lake Water Quality Forecast Section -->
+        <section class="forecast-section">
+            <h2>Lake Water Quality Forecast</h2>
+            <div class="forecast-cards">
+                <div class="forecast-card">
+                    <h3>Today</h3>
+                    <p>Water Temperature: 20°C</p>
+                    <p>Algae Condition: Stable</p>
                 </div>
+                <div class="forecast-card">
+                    <h3>Tomorrow</h3>
+                    <p>Water Temperature: 22°C</p>
+                    <p>Algae Condition: Slight Increase</p>
+                </div>
+                <div class="forecast-card">
+                    <h3>Next 5 Days</h3>
+                    <p>Water Temperature: 19-23°C</p>
+                    <p>Algae Condition: Stable</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Graph Section: Hourly Water Quality Changes -->
+        <section class="graph-section">
+            <h2>Hourly Water Quality Changes</h2>
+            <div class="graph-placeholder">
+                <!-- Placeholder for Graph/Chart -->
+                <canvas id="hourlyWaterChart" width="400" height="200"></canvas>
             </div>
         </section>
     </main>
@@ -118,5 +145,30 @@
     </footer>
 
     <script src="/katuma-jaarive/assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        // Dummy data for the hourly water quality changes chart
+        var ctx = document.getElementById('hourlyWaterChart').getContext('2d');
+        var hourlyWaterChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['1 AM', '2 AM', '3 AM', '4 AM', '5 AM', '6 AM'],
+                datasets: [{
+                    label: 'Water Temperature (°C)',
+                    data: [20, 21, 21, 22, 21, 20],
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                    fill: true,
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: false
+                    }
+                }
+            }
+        });
+    </script>
 </body>
 </html>
